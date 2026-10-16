@@ -212,58 +212,61 @@ console.log(filtredArrayrating,"array filtrati disponibili e rating > 3")
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-for (let p = 0; p < products.length; p++) {
-   let prodotto = products[p]
-   console.log(prodotto, "prodotto in card")
-   let row = document.getElementById('rowUno')
-
-   // si è ridondante con quello scritto sotto avrei potuto riutilizzare questo
-   let stella = "stelline"
-   console.log(prodotto.reting)
-   switch (prodotto.reting) {
-      case 1:
-         stella = `★☆☆☆☆`
-         console.log(stella)
-         break
-
-      case 2:
-         stella = `★★☆☆☆  `
-         console.log(stella)
-         break
-
-      case 3:
-         stella = `★★★☆☆  `
-         console.log(stella)
-         break
-
-      case 4:
-         stella = `★★★★☆  `
-         console.log(stella)
-         break
-
-
-      case 5:
-         stella = `★★★★★`
-         console.log(stella)
-         break
+function renderProdotti(pro){
+   for (let p = 0; p < pro.length; p++) {
+      let prodotto = products[p]
+      console.log(prodotto, "prodotto in card")
+      let row = document.getElementById('rowUno')
+   
+      // si è ridondante con quello scritto sotto avrei potuto riutilizzare questo
+      let stella = "stelline"
+      console.log(prodotto.reting)
+      switch (prodotto.reting) {
+         case 1:
+            stella = `★☆☆☆☆`
+            console.log(stella)
+            break
+   
+         case 2:
+            stella = `★★☆☆☆  `
+            console.log(stella)
+            break
+   
+         case 3:
+            stella = `★★★☆☆  `
+            console.log(stella)
+            break
+   
+         case 4:
+            stella = `★★★★☆  `
+            console.log(stella)
+            break
+   
+   
+         case 5:
+            stella = `★★★★★`
+            console.log(stella)
+            break
+      }
+      console.log(stella)
+   
+   
+     row.innerHTML += `
+       <div class="card">
+         <div class="cardContent">
+           <div class="imgCard">
+             <img src="${prodotto.immgine}">
+           </div>
+           <h4>${prodotto.nome}</h4>
+           <span class="stelline">${stella}</span> (${prodotto.reting})
+           <p class="productPrice">€ ${prodotto.prezzo.toFixed(2)}</p>
+           <button onclick="addtoCart()" class="addToCart">Aggiungi al carrello</button>
+         </div>
+       </div>
+   `;
    }
-   console.log(stella)
-
-
-  row.innerHTML += `
-    <div class="card">
-      <div class="cardContent">
-        <div class="imgCard">
-          <img src="${prodotto.immgine}">
-        </div>
-        <h4>${prodotto.nome}</h4>
-        <span class="stelline">${stella}</span> (${prodotto.reting})
-        <p class="productPrice">€ ${prodotto.prezzo.toFixed(2)}</p>
-        <button onclick="addtoCart()" class="addToCart">Aggiungi al carrello</button>
-      </div>
-    </div>
-`;
 }
+renderProdotti(products)
 
 /* VERSIONE AVANZATA — Aggiungi al carrello
    Quando si clicca il bottone "Aggiungi al carrello", incrementa il contatore
