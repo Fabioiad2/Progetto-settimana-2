@@ -250,19 +250,19 @@ for (let p = 0; p < products.length; p++) {
    console.log(stella)
 
 
-   row.innerHTML += `
-        <div class="card">
-          <div class="cardContent">
-            <div class="imgCard">
-            <img src="${prodotto.immgine}">
-            </div>
-            <h4>${prodotto.nome}</h4>
-            ${`<span class="stelline">${stella}</span (${prodotto.reting})`} 
-            <p class="productPrice">€ ${prodotto.prezzo.toFixed(2)}</p>
-            <button onclick="addtoCart()" class="addToCart">Aggiungi al carrello</button>
-          </div>
+  row.innerHTML += `
+    <div class="card">
+      <div class="cardContent">
+        <div class="imgCard">
+          <img src="${prodotto.immgine}">
         </div>
-   `;
+        <h4>${prodotto.nome}</h4>
+        <span class="stelline">${stella}</span> (${prodotto.reting})
+        <p class="productPrice">€ ${prodotto.prezzo.toFixed(2)}</p>
+        <button onclick="addtoCart()" class="addToCart">Aggiungi al carrello</button>
+      </div>
+    </div>
+`;
 }
 
 /* VERSIONE AVANZATA — Aggiungi al carrello
