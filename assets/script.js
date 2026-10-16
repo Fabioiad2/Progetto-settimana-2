@@ -166,24 +166,38 @@ stellina(5)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const arrayFiltratiPerCategoria = []
+function filtroCategoria(categoria){
+  for(let p = 0; p < products.length; p++){
+     let singleProduct = products[p]
+     console.log(singleProduct.nome,"nome singolo prodotto")
+   if(singleProduct.categoria === categoria){
+      console.log("prodotti categoria",categoria)
+      return arrayFiltratiPerCategoria.push(singleProduct)
+   }
+  }
+}
+filtroCategoria()
+
+
 
 /* VERSIONE INTERMEDIA — Filtro disponibilità e rating
    Funzione che genera un array filtrato dall'array prodotti, mostrando soltanto i prodotti disponibili con rating >= 3
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-const arrayFiltrati = []
-function filtroCategoria(categoria){
+const filtredArrayrating = []
+function filterRating(){
   for(let p = 0; p < products.length; p++){
      let singleProduct = products[p]
      console.log(singleProduct.nome,"nome singolo prodotto")
-   if(singleProduct.categoria === categoria && singleProduct.reting >=3){
-      arrayFiltrati.push(singleProduct)
+   if(singleProduct.reting >=3){
+      filtredArrayrating.push(singleProduct)
    }
   }
 }
-filtroCategoria("abbigliamento")
-console.log(arrayFiltrati)
+filterRating()
+console.log(filtredArrayrating)
 
 /* --------------------------------------------------------------
 
