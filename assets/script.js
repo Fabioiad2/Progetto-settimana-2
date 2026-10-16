@@ -196,13 +196,13 @@ function filterRating() {
    for (let p = 0; p < products.length; p++) {
       let singleProduct = products[p]
       console.log(singleProduct.nome, "nome singolo prodotto")
-      if (singleProduct.reting >= 3) {
+      if (singleProduct.reting >= 3 && singleProduct.disponibile === true) {
          filtredArrayrating.push(singleProduct)
       }
    }
 }
 filterRating()
-console.log(filtredArrayrating)
+console.log(filtredArrayrating,"array filtrati disponibili e rating > 3")
 
 /* --------------------------------------------------------------
 
