@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Amazon Homepage — Week Project</title>
   <link rel="stylesheet" href="assets/style.css">
-  <script type="module" src="assets/script.js"></script>
 </head>
 
 <body>
@@ -21,7 +20,7 @@
       </div>
       <a href="#">Account</a>
       <a href="#">ordini</a>
-      <button class="cartButton">Carrello (0)</button>
+      <button class="cartButton">Carrello <span id="ValoreCounter"></span></button>
     </div>
   </header>
 
@@ -36,40 +35,42 @@
     <section class="categorie">
       <!-- 4 card categoria -->
       <h3>categorie</h3>
-      <div class="card">
+      <div id="rowcategorie" class="">
+       <div class="card">
         <div class="imgCard"></div>
         <div class="cardContent">
           <h4>Elettronica</h4>
           <a href="#">Scopri di più</a>
         </div>
       </div>
-      <div class="card">
+       <div class="card">
         <div class="imgCard"></div>
         <div class="cardContent">
           <h4>Elettronica</h4>
           <a href="#">Scopri di più</a>
         </div>
       </div>
-      <div class="card">
+       <div class="card">
         <div class="imgCard"></div>
         <div class="cardContent">
           <h4>Elettronica</h4>
           <a href="#">Scopri di più</a>
         </div>
       </div>
-      <div class="card">
+       <div class="card">
         <div class="imgCard"></div>
         <div class="cardContent">
           <h4>Elettronica</h4>
           <a href="#">Scopri di più</a>
         </div>
+      </div>
       </div>
     </section>
 
     <section class="prodotti">
       <!-- Griglia prodotti (Versione Base: HTML statico; Intermedia/Avanzata: generata da JS) -->
       <h3>i più venduti</h3>
-      <div id="row" class="row">
+      <div id="rowUno" class="row">
 
       </div>
     </section>
@@ -107,6 +108,7 @@
 
   </footer>
 
+  <script src="assets/script.js"></script>
 </body>
 
 </html>
