@@ -22,35 +22,35 @@ const products = [
       prezzo: 50,
       reting: 4,
       immgine: true,
-      disponibile: false
-   },
-
-   {
-      nome: "",
-      categoria: "",
-      prezzo: 0,
-      reting: 0,
-      immgine: true,
-      disponibile: false
-
-   },
-
-   {
-      nome: "",
-      categoria: "",
-      prezzo: 0,
-      reting: 0,
-      immgine: true,
       disponibile: true
    },
 
    {
-      nome: "",
-      categoria: "",
+      nome: "Iphone",
+      categoria: "elettronica",
       prezzo: 0,
-      reting: 0,
+      reting: 5,
       immgine: true,
       disponibile: true
+
+   },
+
+   {
+      nome: "Maglia",
+      categoria: "abbigliamento",
+      prezzo: 0,
+      reting: 3,
+      immgine: false,
+      disponibile: false
+   },
+
+   {
+      nome: "Cappello",
+      categoria: "abbigliamento",
+      prezzo: 0,
+      reting: 2,
+      immgine: false,
+      disponibile: false
    },
 
    {
@@ -141,6 +141,25 @@ console.table(products)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+function stellina(rating){
+   switch(rating){
+      case 1:
+         return`rating ${rating}★☆☆☆☆`
+      case 2:
+         return`rating ${rating}★★☆☆☆`
+      case 3:
+         return`rating ${rating}★★★☆☆`
+      case 4:
+         return`rating ${rating}★★★★☆`
+      case 5:
+         return`rating ${rating}★★★★★`
+   }
+   return rating
+}
+console.log(
+stellina(5)
+
+)
 
 /* VERSIONE INTERMEDIA — Filtro per categoria
    Funzione che riceve il parametro categoria e filtra l'array prodotti mostrando solo i prodotti della categoria ricevuta
@@ -153,6 +172,18 @@ console.table(products)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const arrayFiltrati = []
+function filtroCategoria(categoria){
+  for(let p = 0; p < products.length; p++){
+     let singleProduct = products[p]
+     console.log(singleProduct.nome,"nome singolo prodotto")
+   if(singleProduct.categoria === categoria && singleProduct.reting >=3){
+      arrayFiltrati.push(singleProduct)
+   }
+  }
+}
+filtroCategoria("abbigliamento")
+console.log(arrayFiltrati)
 
 /* --------------------------------------------------------------
 
