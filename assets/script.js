@@ -127,6 +127,12 @@ console.table(products)
    Funzione che ritorna una stringa tipo "€ 19,99".
    Esempio in console.log: Monitor: € 150,00
 */
+function formattaPrezzo(prezzo){
+   console.log(prezzo.toFixed())
+}
+formattaPrezzo(160)
+
+
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
@@ -221,17 +227,17 @@ for (let p = 0; p < products.length; p++) {
          break
 
       case 2:
-         stella = `★★☆☆☆ = `
+         stella = `★★☆☆☆  `
          console.log(stella)
          break
 
       case 3:
-         stella = `★★★☆☆ = `
+         stella = `★★★☆☆  `
          console.log(stella)
          break
 
       case 4:
-         stella = `★★★★☆ = `
+         stella = `★★★★☆  `
          console.log(stella)
          break
 

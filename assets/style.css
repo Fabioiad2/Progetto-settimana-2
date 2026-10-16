@@ -30,9 +30,10 @@ button {
 }
 
 .categorie , .prodotti{
-  margin: auto;
+  padding-inline: 20px;
   width: 100%;
-  margin-top: 10px;
+  margin-top: 2rem;
+
 }
 
 /* Scrivi qui sotto i tuoi stili */
@@ -41,10 +42,12 @@ button {
   display: inline-block;
   background-color: #131921;
 }
-.header{
+
+ .header{
+  position: sticky;
+  top: 0;
   width: 100%;
   padding: 15px;
- 
 }
 .cerca{
   display: inline-block;
@@ -68,6 +71,8 @@ button {
   margin: auto;
   width: 100%;
   text-align: center;
+  height: 220px;
+  padding: 65px 15px;
 }
 
 .hero, .header{
@@ -100,7 +105,16 @@ button {
 
   display: inline-block;
   width: 20%;
+;
+}
+.imgCard h4{
+  color: #EEEEEE;
+  font-size: 36px;
+  text-align: center;
+}
 
+.colorcard:nth-child(1){
+  background-color: red;
 }
 
 
@@ -121,7 +135,6 @@ button {
 
 .footer{
   background-color: #232F3E;
-  padding-inline: 3%;
   color: white;
 }
 
@@ -129,7 +142,42 @@ button {
 .row{
   width: 100%;
   margin: auto;
+  text-align: center;
+
 }
+.row h3{
+  text-align: start;
+  /* margin-left: 190px; */
+}
+
+
 .row, .col-4{
   display: inline-block;
 }
+
+.allinaFooter .col-4{
+  text-align: start;
+  margin-right: 250px;
+  padding: 2%;
+}
+
+
+/* .allinaFooter{
+  text-align: center; per avere il footer allineato
+
+} */
+ .elettronica{
+  background-color: #232F3E;
+ }
+
+ .libri{
+  background-color: #C45500;
+}
+
+ .abbigliamento{
+  background-color: #146EB4;
+}
+
+ .casa{
+  background-color:  #067D62;
+ }
