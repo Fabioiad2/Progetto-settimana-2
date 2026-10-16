@@ -61,7 +61,7 @@ button {
 
 }
 .cerca input{
-  width: 300px;
+  width: 600px;
 
 }
 
@@ -111,6 +111,11 @@ button {
   color: #EEEEEE;
   font-size: 36px;
   text-align: center;
+  padding-top: 60px;
+}
+
+.hero h2{
+  font-size: 32px;
 }
 
 .colorcard:nth-child(1){
