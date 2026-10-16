@@ -170,13 +170,15 @@ function filtroCategoria(categoria) {
       console.log(singleProduct.nome, "nome singolo prodotto")
       if (singleProduct.categoria === categoria) {
          console.log("prodotti categoria", categoria)
-         return arrayFiltratiPerCategoria.push(singleProduct)
+          arrayFiltratiPerCategoria.push(singleProduct)
+          console.log(arrayFiltratiPerCategoria)
       }
    }
+   console.log("array categoria"+ categoria ,arrayFiltratiPerCategoria)
+   return arrayFiltratiPerCategoria
 }
-filtroCategoria()
 
-
+filtroCategoria("abbigliamento")
 
 /* VERSIONE INTERMEDIA — Filtro disponibilità e rating
    Funzione che genera un array filtrato dall'array prodotti, mostrando soltanto i prodotti disponibili con rating >= 3
@@ -209,6 +211,7 @@ for (let p = 0; p < products.length; p++) {
    console.log(prodotto, "prodotto in card")
    let row = document.getElementById('rowUno')
 
+   // si è ridondante con quello scritto sotto avrei potuto riutilizzare questo
    let stella = "stelline"
    console.log(prodotto.reting)
    switch (prodotto.reting) {
