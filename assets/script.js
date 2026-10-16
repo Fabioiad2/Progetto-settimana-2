@@ -207,6 +207,22 @@ console.log(filtredArrayrating)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+for(let p = 0; p < products.length; p++ ){
+   let prodotto = products[p]
+   console.log(prodotto,"prodotto in card")
+   let row =document.getElementById('row')
+   row.innerHTML += `
+        <div class="card">
+          <div class="cardContent">
+            <div class="imgCard"></div>
+            <h4>${prodotto.nome}</h4>
+            ${prodotto.reting}
+            <p>${prodotto.prezzo}</p>
+            <button class="addToCart">Aggiungi al carrello</button>
+          </div>
+        </div>
+   `;
+}
 
 
 /* VERSIONE AVANZATA — Aggiungi al carrello
