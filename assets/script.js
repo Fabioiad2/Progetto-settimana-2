@@ -16,113 +16,110 @@ REGOLE
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 const products = [
-   {
-      nome: "Cuffie wireless",
-      categoria: "elettronica",
-      prezzo: 50,
-      reting: 4,
-      immgine: true,
-      disponibile: true
-   },
+  // Categoria: Elettronica
+  {
+    nome: "Cuffie wireless",
+    categoria: "elettronica",
+    prezzo: 50,
+    reting: 4,
+    immgine: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&auto=format&fit=crop&q=60",
+    disponibile: true
+  },
+  {
+    nome: "iPhone",
+    categoria: "elettronica",
+    prezzo: 999,
+    reting: 5,
+    immgine: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500&auto=format&fit=crop&q=60",
+    disponibile: true
+  },
+  {
+    nome: "Smartwatch",
+    categoria: "elettronica",
+    prezzo: 180,
+    reting: 4,
+    immgine: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop&q=60",
+    disponibile: true
+  },
 
-   {
-      nome: "Iphone",
-      categoria: "elettronica",
-      prezzo: 0,
-      reting: 5,
-      immgine: true,
-      disponibile: true
+  // Categoria: Abbigliamento
+  {
+    nome: "Maglia",
+    categoria: "abbigliamento",
+    prezzo: 25,
+    reting: 3,
+    immgine: "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=500&auto=format&fit=crop&q=60",
+    disponibile: false
+  },
+  {
+    nome: "Cappello",
+    categoria: "abbigliamento",
+    prezzo: 15,
+    reting: 2,
+    immgine: "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=500&auto=format&fit=crop&q=60",
+    disponibile: false
+  },
+  {
+    nome: "Sneakers sportive",
+    categoria: "abbigliamento",
+    prezzo: 85,
+    reting: 5,
+    immgine: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&auto=format&fit=crop&q=60",
+    disponibile: true
+  },
 
-   },
+  // Categoria: Casa
+  {
+    nome: "Lampada da tavolo",
+    categoria: "casa",
+    prezzo: 40,
+    reting: 4,
+    immgine: "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=500&auto=format&fit=crop&q=60",
+    disponibile: true
+  },
+  {
+    nome: "Bollitore elettrico",
+    categoria: "casa",
+    prezzo: 30,
+    reting: 4,
+    immgine: "https://images.unsplash.com/photo-1585515320310-259814833e62?w=500&auto=format&fit=crop&q=60",
+    disponibile: true
+  },
+  {
+    nome: "Tazza in ceramica",
+    categoria: "casa",
+    prezzo: 12,
+    reting: 5,
+    immgine: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=500&auto=format&fit=crop&q=60",
+    disponibile: true
+  },
 
-   {
-      nome: "Maglia",
-      categoria: "abbigliamento",
-      prezzo: 0,
-      reting: 3,
-      immgine: false,
-      disponibile: false
-   },
-
-   {
-      nome: "Cappello",
-      categoria: "abbigliamento",
-      prezzo: 0,
-      reting: 2,
-      immgine: false,
-      disponibile: false
-   },
-
-   {
-      nome: "",
-      categoria: "",
-      prezzo: 0,
-      reting: 0,
-      immgine: true,
-      disponibile: true
-   },
-
-   {
-      nome: "",
-      categoria: "",
-      prezzo: 0,
-      reting: 0,
-      immgine: true,
-      disponibile: true
-   },
-
-   {
-      nome: "",
-      categoria: "",
-      prezzo: 0,
-      reting: 0,
-      immgine: true,
-      disponibile: true
-   },
-
-   {
-      nome: "",
-      categoria: "",
-      prezzo: 0,
-      reting: 0,
-      immgine: true,
-      disponibile: true
-   },
-
-   {
-      nome: "",
-      categoria: "",
-      prezzo: 0,
-      reting: 0,
-      immgine: true,
-      disponibile: true
-   },
-
-   {
-      nome: "",
-      categoria: "",
-      prezzo: 0,
-      reting: 0,
-      immgine: true,
-      disponibile: true
-   },
-   {
-      nome: "",
-      categoria: "",
-      prezzo: 0,
-      reting: 0,
-      immgine: true,
-      disponibile: true
-   },
-   {
-      nome: "",
-      categoria: "",
-      prezzo: 0,
-      reting: 0,
-      immgine: true,
-      disponibile: true
-   }
-]
+  // Categoria: Libri
+  {
+    nome: "Romanzo fantasy",
+    categoria: "libri",
+    prezzo: 18,
+    reting: 5,
+    immgine: "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=500&auto=format&fit=crop&q=60",
+    disponibile: true
+  },
+  {
+    nome: "Manuale JavaScript",
+    categoria: "libri",
+    prezzo: 35,
+    reting: 4,
+    immgine: "https://images.unsplash.com/photo-1532012164546-f432f2e3777f?w=500&auto=format&fit=crop&q=60",
+    disponibile: true
+  },
+  {
+    nome: "Taccuino rilegato",
+    categoria: "libri",
+    prezzo: 10,
+    reting: 3,
+    immgine: "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?w=500&auto=format&fit=crop&q=60",
+    disponibile: false
+  }
+];
 console.table(products)
 
 
@@ -145,14 +142,19 @@ function stellina(rating){
    switch(rating){
       case 1:
          return`rating ${rating}★☆☆☆☆`
+         break
       case 2:
          return`rating ${rating}★★☆☆☆`
+         break
       case 3:
          return`rating ${rating}★★★☆☆`
+         break
       case 4:
          return`rating ${rating}★★★★☆`
+         break
       case 5:
          return`rating ${rating}★★★★★`
+         break
    }
    return rating
 }
@@ -211,14 +213,17 @@ for(let p = 0; p < products.length; p++ ){
    let prodotto = products[p]
    console.log(prodotto,"prodotto in card")
    let row =document.getElementById('row')
+
    row.innerHTML += `
         <div class="card">
           <div class="cardContent">
-            <div class="imgCard"></div>
+            <div class="imgCard">
+            <img src="${prodotto.immgine}">
+            </div>
             <h4>${prodotto.nome}</h4>
-            ${prodotto.reting}
-            <p>${prodotto.prezzo}</p>
-            <button class="addToCart">Aggiungi al carrello</button>
+            ${prodotto.reting} stelle
+            <p>€ ${prodotto.prezzo}</p>
+            <button onclick="addtoCart()" class="addToCart">Aggiungi al carrello</button>
           </div>
         </div>
    `;
@@ -231,6 +236,17 @@ for(let p = 0; p < products.length; p++ ){
    Per i prodotti esauriti: bottone disabilitato e testo "Esaurito".
    Suggerimento: usa una closure come visto in aula
 */
+
+// in dom.html
+
+let count = 0
+
+function addtoCart(c){
+   count = c + 1
+   console.log(count)
+}
+
+
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
