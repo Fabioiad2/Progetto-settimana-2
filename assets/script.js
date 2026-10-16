@@ -130,7 +130,7 @@ console.table(products)
 function formattaPrezzo(prezzo){
    console.log(prezzo.toFixed(2))
 }
-formattaPrezzo(160.99)
+formattaPrezzo(160)
 
 
 

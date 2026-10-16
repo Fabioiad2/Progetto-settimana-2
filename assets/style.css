@@ -203,3 +203,13 @@ button {
  .stelline{
   color: #FF9900;
  }
+
+ ul li{
+  list-style: none;
+ }
+
+ .titoloLista{
+  font-size: 25px;
+ }
+
+ 
