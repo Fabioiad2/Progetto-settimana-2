@@ -257,7 +257,7 @@ for (let p = 0; p < products.length; p++) {
             <img src="${prodotto.immgine}">
             </div>
             <h4>${prodotto.nome}</h4>
-            ${`${stella} (${prodotto.reting})`} 
+            ${`<span class="stelline">${stella}</span (${prodotto.reting})`} 
             <p class="productPrice">€ ${prodotto.prezzo.toFixed(2)}</p>
             <button onclick="addtoCart()" class="addToCart">Aggiungi al carrello</button>
           </div>
