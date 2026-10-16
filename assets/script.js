@@ -128,9 +128,9 @@ console.table(products)
    Esempio in console.log: Monitor: € 150,00
 */
 function formattaPrezzo(prezzo){
-   console.log(prezzo.toFixed())
+   console.log(prezzo.toFixed(2))
 }
-formattaPrezzo(160)
+formattaPrezzo(160.99)
 
 
 
@@ -258,7 +258,7 @@ for (let p = 0; p < products.length; p++) {
             </div>
             <h4>${prodotto.nome}</h4>
             ${`${stella} (${prodotto.reting})`} 
-            <p>€ ${prodotto.prezzo}</p>
+            <p class="productPrice">€ ${prodotto.prezzo.toFixed(2)}</p>
             <button onclick="addtoCart()" class="addToCart">Aggiungi al carrello</button>
           </div>
         </div>

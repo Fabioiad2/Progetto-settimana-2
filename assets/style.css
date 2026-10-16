@@ -186,3 +186,16 @@ button {
  .casa{
   background-color:  #067D62;
  }
+
+ a:link:hover{
+  text-decoration: underline;
+ }
+
+ .productPrice{
+  color: red;
+  font-size: 24px;
+
+ }
+ .cardContent{
+  text-align: start;
+ }
