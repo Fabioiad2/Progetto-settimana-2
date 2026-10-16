@@ -15,6 +15,115 @@ REGOLE
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const products = [
+   {
+      nome: "Cuffie wireless",
+      categoria: "elettronica",
+      prezzo: 50,
+      reting: 4,
+      immgine: true,
+      disponibile: false
+   },
+
+   {
+      nome: "",
+      categoria: "",
+      prezzo: 0,
+      reting: 0,
+      immgine: true,
+      disponibile: false
+
+   },
+
+   {
+      nome: "",
+      categoria: "",
+      prezzo: 0,
+      reting: 0,
+      immgine: true,
+      disponibile: true
+   },
+
+   {
+      nome: "",
+      categoria: "",
+      prezzo: 0,
+      reting: 0,
+      immgine: true,
+      disponibile: true
+   },
+
+   {
+      nome: "",
+      categoria: "",
+      prezzo: 0,
+      reting: 0,
+      immgine: true,
+      disponibile: true
+   },
+
+   {
+      nome: "",
+      categoria: "",
+      prezzo: 0,
+      reting: 0,
+      immgine: true,
+      disponibile: true
+   },
+
+   {
+      nome: "",
+      categoria: "",
+      prezzo: 0,
+      reting: 0,
+      immgine: true,
+      disponibile: true
+   },
+
+   {
+      nome: "",
+      categoria: "",
+      prezzo: 0,
+      reting: 0,
+      immgine: true,
+      disponibile: true
+   },
+
+   {
+      nome: "",
+      categoria: "",
+      prezzo: 0,
+      reting: 0,
+      immgine: true,
+      disponibile: true
+   },
+
+   {
+      nome: "",
+      categoria: "",
+      prezzo: 0,
+      reting: 0,
+      immgine: true,
+      disponibile: true
+   },
+   {
+      nome: "",
+      categoria: "",
+      prezzo: 0,
+      reting: 0,
+      immgine: true,
+      disponibile: true
+   },
+   {
+      nome: "",
+      categoria: "",
+      prezzo: 0,
+      reting: 0,
+      immgine: true,
+      disponibile: true
+   }
+]
+console.table(products)
 
 
 /* VERSIONE INTERMEDIA — formattaPrezzo(prezzo)

@@ -29,4 +29,96 @@ button {
   background: none;
 }
 
+.categorie , .prodotti{
+  margin: auto;
+  width: 100%;
+  margin-top: 10px;
+}
+
 /* Scrivi qui sotto i tuoi stili */
+
+.header, h1{
+  display: inline-block;
+  background-color: #131921;
+}
+.header{
+  width: 100%;
+  padding: 15px;
+ 
+}
+.cerca{
+  display: inline-block;
+
+}
+.cerca button, input, .cartButton{
+   padding: 1rem;
+}
+.cerca button{
+  background-color: #FEBD69;
+
+}
+.cerca input{
+  width: 300px;
+
+}
+
+.hero{
+  background-color: #303F51;
+  display: inline-block;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.hero, .header{
+  color: white;
+}
+
+.cartButton{
+  background-color: #232F3E;
+  color: white;
+  
+}
+
+#title{
+  color: orange;
+}
+
+.imgCard{
+  background-color: #303F51;
+  min-height: 200px;
+}
+
+
+
+.card{
+
+  display: inline-block;
+  width: 20%;
+
+}
+
+
+
+.cardContent{
+  padding: 3%;
+  /* border: 1px solid; */
+  box-shadow:  0.1px 0.1px;
+
+}
+
+.addToCart{
+  background-color: #F7CA00;
+  padding: 3%;
+  border-radius: 999px;
+  width: 100%;
+}
+
+.footer{
+  background-color: #232F3E;
+}
+
+ul,li{
+  color: white;
+  display: inline-block;
+}
