@@ -260,7 +260,7 @@ function renderProdotti(pro){
            <h4>${prodotto.nome}</h4>
            <span class="stelline">${stella}</span> (${prodotto.reting})
            <p class="productPrice">€ ${prodotto.prezzo.toFixed(2)}</p>
-           <button onclick="addtoCart()" class="addToCart">Aggiungi al carrello</button>
+           <button onclick="addtoCart()" class="addToCart">${prodotto.disponibile === true ? "Aggiungi al carrello" : "prodotto eseurito"}</button>
          </div>
        </div>
    `;
